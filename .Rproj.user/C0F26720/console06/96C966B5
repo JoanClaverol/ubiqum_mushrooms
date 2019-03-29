@@ -5,4 +5,45 @@ C:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>[0K[?2
 [0K[?25hInitialized empty Git repository in C:/Users/romcl/OneDrive/Documents/UbiqumCodeAcadem[0Ky[?25l
 /assesments/mushroom/.git/[0K
 [0K[?25h]0; [?25l
+C:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>[0K[?25hg[0Ki[0Kt[0K[77G[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>git a[0K[?25hd[0Kd[0K[81G[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>git add .[0K[?25h]0;  - git  add .[?25l
+[0K[?25h]0; [?25l
+C:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>[0K[?25hg[0Ki[0Kt[0K[77G[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>git c[0K[?25ho[0Km[0Km[0Ki[0Kt[0K[84G[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>git commit -[0K[?25hm[0K[87G[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>git commit -m [0K"
+[0K[?25hf[0Ki[0Kr[0Ks[0Kt[0K[7G[?25lfirst c[0K[?25ho[0Km[0Km[0Ki[0Kt[0K"[0K]0;  - git  commit -m "first commit"[?25l
+[0K[?25h[master (root-commit) 14b106e] first commit[0K[?25l
+ 5 files changed, 22 insertions(+)[0K
+ create mode 100644 .Rproj.user/C0F26720/console06/96C966B5[0K
+ create mode 100644 .Rproj.user/C0F26720/console06/INDEX001[0K
+ create mode 100644 .Rproj.user/C0F26720/sources/s-DF7245A1/lock_file[0K
+ create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names[0K
+ create mode 100644 mushroom.Rproj[0K
+[0K[?25h]0; [?25l
+C:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>[0K[?25hg[0Ki[0Kt[0K[77G[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>git r[0K[?25he[0Km[0Ko[0Kt[0Ke[0K[84G[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>git remote a[0K[?25hd[0Kd[0K[?25l
+[0K[?25ho[0Kr[0Ki[0Kg[0Ki[0Kn[0K[8G[?25lorigin https://github.com/JoanClaverol/ubiqum_mushrooms.git[0K[?25h[?25l
+[0K[?25h]0;  - git  remote add origin https://github.com/JoanClaverol/ubiqum_mushrooms.git]0; [?25l
+C:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>[0K[?25hg[0Ki[0Kt[0K[77G[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>git r[0K[?25he[0Km[0Ko[0Kt[0Ke[0K[84G[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>git remote -[0K[?25hv[0K]0;  - git  remote -v[?25l
+[0K[?25h]0; origin  https://github.com/JoanClaverol/ubiqum_mushrooms.git (fetch)[0K[?25l
+origin  https://github.com/JoanClaverol/ubiqum_mushrooms.git (push)[0K
+[0K
+C:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>[0K[?25hg[0Ki[0Kt[0K[77G[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>git b[0K[?25hr[0Ka[0Kn[0Kc[0Kh[0K[?25l
+[0K[?25h]0;  - git  branch* [0;32mmaster[0m[0K[?25l
+[0K[?25h]0; [?25l
+C:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>[0K[?25hg[0Ku[0K[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>g[0K[?25hi[0Kt[0K[77G[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>git p[0K[?25hu[0Ks[0Kh[0K[82G[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>git push o[0K[?25hr[0Ki[0Kg[0Ki[0K[0Kn[?25l
+[0K[?25hm[0Ka[0Ks[0Kt[0Ke[0Kr[0K]0;  - git  push originmaster[?25l
+[0K[?25h]0; fatal: 'originmaster' does not appear to be a git repository[0K[?25l
+fatal: Could not read from remote repository.[0K
+[0K
+Please make sure you have the correct access rights[0K
+and the repository exists.[0K
+[0K
+C:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>[0K[?25hgit push origi[0Kn[?25l
+master[0K[?25h[6G[5G[4G[3G[2G[1G[?25l master[0K[2G[?25h]0;  - git  push origin master[?25l
+[0K[?25hEnumerating objects: 13, done.[0K[?25l
+Counting objects: 100% (13/13), done.[0K
+Delta compression using up to 4 threads.[0K
+Compressing objects: 100% (8/8), done.[0K
+Writing objects:  23% (3/13)[0K[2G[?25h[?25lWriting objects: 100% (13/13), 1.37 KiB | 156.00 KiB/s, done.[0K
+Total 13 (delta 0), reused 0 (delta 0)[0K
+[0K[?25h]0; To https://github.com/JoanClaverol/ubiqum_mushrooms.git[0K[?25l
+ * [new branch]      master -> master[0K
+[0K
 C:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>[0K[?25hg[0Ki[0Kt[0K[77G[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>git a[0K[?25hd[0Kd[0K[81G[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>git add .[0K[?25h

@@ -1,0 +1,7 @@
+Good morning guys!
+
+Dr. Michael Thompson, head of the Department of Biology at the Highshire University, has contacted us for help. He wants to develop an application that, given some photographies of a mushroom, can tell to users if it is an edible specie or a poisonous one. 
+
+Attached to this e-mail you will find a csv file with the information collected by his Department, as well as a text file with additional information about this dataset. Your task will consist in develop the best model possible to determine the class of a mushroom (edible or poisonous) taking into account its characteristics.
+
+Good luck!
