@@ -46,4 +46,28 @@ Total 13 (delta 0), reused 0 (delta 0)[0K
 [0K[?25h]0; To https://github.com/JoanClaverol/ubiqum_mushrooms.git[0K[?25l
  * [new branch]      master -> master[0K
 [0K
-C:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>[0K[?25hg[0Ki[0Kt[0K[77G[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>git a[0K[?25hd[0Kd[0K[81G[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>git add .[0K[?25h
+C:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>[0K[?25hg[0Ki[0Kt[0K[77G[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>git a[0K[?25hd[0Kd[0K[81G[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>git add .[0K[?25h]0;  - git  add .[?25l
+[0K[?25h]0; [?25l
+C:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>[0K[?25hg[0Ki[0Kt[0K[77G[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>git c[0K[?25ho[0Km[0Km[0Ki[0Kt[0K[84G[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>git commit -[0K[?25hm[0K[87G[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>git commit -m [0K"
+[0K[?25h[2G[1Gu[0Kp[0Kl[0Ko[0Ka[0Kd[0Ki[0Kn[0Kg[0K[11G[?25luploading t[0K[?25hh[0Ke[0K[15G[?25luploading the d[0K[?25ha[0Kt[0Ka[0K"[0K]0;  - git  commit -m "uploading the data"[?25l
+[0K[?25h]0; [master 9184faa] uploading the data[0K[?25l
+ 7 files changed, 8272 insertions(+)[0K
+ create mode 100644 data/agaricus-lepiota.data[0K
+ create mode 100644 data/test_img.rds[0K
+ create mode 100644 data/test_img_creation.R[0K
+ create mode 100644 data/train.rds[0K
+ create mode 100644 info/email.txt[0K
+ create mode 100644 info/info.txt[0K
+[0K
+C:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>[0K[?25hg[0Ki[0Kt[0K[77G[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>git c[0K[?25ho[0Km[0Km[0K[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>git com[0K[?25h[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>git co[0K[?25h[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>git c[0K[?25h[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>git[0K[77G[?25h[76G[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>gi[0K[?25h[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>g[0K[?25h[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>[0K[?25hg[0Ki[0Kt[0K[77G[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>git p[0K[?25hu[0Ks[0Kh[0K[82G[?25lC:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>git push o[0K[?25hr[0Ki[0Kg[0Ki[0K[0Kn[?25l
+[0K[?25h[2G[?25l m[0K[?25ha[0Ks[0Kt[0Ke[0Kr[0K[?25l
+[0K[?25h]0;  - git  push origin masterEnumerating objects: 19, done.[0K[?25l
+Counting objects: 100% (19/19), done.[0K
+Delta compression using up to 4 threads.[0K
+Compressing objects: 100% (14/14), done.[0K
+Writing objects:  50% (7/14)[0K[1G[?25hWriting objects: 100% (14/14), 80.21 KiB | 2.86 MiB/s, done.[0K[?25l
+Total 14 (delta 0), reused 0 (delta 0)[0K
+[0K[?25hTo https://github.com/JoanClaverol/ubiqum_mushrooms.git[0K[?25l
+   14b106e..9184faa  master -> master[0K
+[0K[?25h]0; [?25l
+C:\Users\romcl\OneDrive\Documents\UbiqumCodeAcademy\assesments\mushroom>[0K[?25h
