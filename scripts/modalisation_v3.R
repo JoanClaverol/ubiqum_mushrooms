@@ -89,9 +89,9 @@ mod_errors <- data_balance %>%
 data_balance_err <- data_balance %>% 
   bind_rows(mod_errors) %>% select(-pred)
 
-check <- 1
-for (i in 1:8) {
-  # if (check != 0) {
+deads <- 1
+for (i in 1:15) {
+  if (deads != 0) {
     # creating the model 
     set.seed(123)
     train_id <- createDataPartition(
@@ -124,14 +124,14 @@ for (i in 1:8) {
     # adding the errors in our data
     data_balance_err <- data_balance_err %>% 
       bind_rows(mod_errors_loop) %>% select(-pred)
-    check <- nrow(mod_errors_loop)
+    deads <- nrow(mod_errors_loop)
     
     # confusion matrix
     print(
     confusionMatrix(predict(mod_2, test_err), as.factor(test_err$class),
                     dnn = c("Prediction", "Reference"))
     )
-  # }
+  }
 }
 
 # saving the model
