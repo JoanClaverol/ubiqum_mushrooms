@@ -47,11 +47,9 @@ test  <- data_balance[-train_id,]
 control_method <-"repeatedcv"
 control_folds <- 10
 control_repeats <- 1
-control_search <- "grid"
 fitControl <- trainControl(method = control_method,
                            number = control_folds,
                            repeats = control_repeats,
-                           # search = control_search
                            classProbs = TRUE,
                            verboseIter = FALSE,
                            )
