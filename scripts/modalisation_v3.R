@@ -2,7 +2,8 @@
 if (require(pacman) == FALSE) {
   install.packages("pacman")
 }
-pacman::p_load(tidyverse, caret, modelr, readr, gmodels, rattle, rpart, ROCR)
+pacman::p_load(tidyverse, caret, modelr, readr, gmodels, rattle, rpart, ROCR,
+               gridExtra)
 
 # load data ---------------------------------------------------------------
 data <- read_rds("data/train.rds")
@@ -26,7 +27,7 @@ data <- unique(data)
 # is the data balanced between p and e?
 prop.table(table(data$class))
 
-# duplicating poisonous mushrooms
+# balance of the dataset
 mush_poison <- data %>% 
   filter(class == "p")
 data_balance <- data %>% bind_rows(mush_poison) 
@@ -55,7 +56,7 @@ fitControl <- trainControl(method = control_method,
                            )
 
 #set training parameters
-train_method <- "C5.0"
+train_method <- "rpart"
 train_metric <- "ROC"
 train_tuneLength <- 15
 
@@ -90,7 +91,8 @@ data_balance_err <- data_balance %>%
 deads <- 1
 for (i in 1:15) {
   if (deads != 0) {
-    # creating the model 
+    
+    # model creation 
     set.seed(123)
     train_id <- createDataPartition(
       y = data_balance_err$class,
@@ -101,7 +103,7 @@ for (i in 1:15) {
     test_err  <- data_balance_err[-train_id,]
     
     #set training parameters
-    train_method <- "C5.0"
+    train_method <- "rpart"
     train_metric <- "ROC"
     train_tuneLength <- 15
     
@@ -129,8 +131,28 @@ for (i in 1:15) {
     confusionMatrix(predict(mod_2, test_err), as.factor(test_err$class),
                     dnn = c("Prediction", "Reference"))
     )
+    
+    # visualize the errors
+    for (i in 1:length(image_var)) {
+      temp_errors <- mod_errors_loop %>% 
+        gather(key = "var" , value = "values", image_var) %>% 
+        filter(var == image_var[i])
+      
+      assign(
+        paste0("p", i), 
+        ggplot(data = temp_errors) + 
+          geom_bar(aes(x = values)) + labs(title = image_var[i]))
+    }
+    grid.arrange(p1, p2, p3, p4, p6, p7, 
+                 top = paste("Number of deads",deads))
   }
 }
 
 # saving the model
 write_rds(mod_2, path = "models/model_iterations.rds")
+
+
+
+# visalizations -----------------------------------------------------------
+
+

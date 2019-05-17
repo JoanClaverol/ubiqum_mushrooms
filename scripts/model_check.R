@@ -10,8 +10,8 @@ test$class <- as.factor(test$class)
 # checking the model ----
 
 # load the model 
-load("C:/Users/romcl/Desktop/Flo&JuliAlwaysChachara.rda")
-student_model <- RFmodel2
+load("C:/Users/romcl/Desktop/modelToine1.rds")
+student_model <- read_rds("C:/Users/romcl/Desktop/modelToine1.rds")
 
 # checking the results
 test$predictions <- predict(object = student_model, test)
