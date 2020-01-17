@@ -89,8 +89,10 @@ data_balance_err <- data_balance %>%
   bind_rows(mod_errors) %>% select(-pred)
 
 deads <- 1
-for (i in 1:15) {
-  if (deads != 0) {
+index <- 1
+errors_df <- tibble()
+
+while (deads != 0) {
     
     # model creation 
     set.seed(123)
@@ -123,7 +125,8 @@ for (i in 1:15) {
     
     # adding the errors in our data
     data_balance_err <- data_balance_err %>% 
-      bind_rows(mod_errors_loop) %>% select(-pred)
+      bind_rows(mod_errors_loop) %>% 
+      select(-pred)
     deads <- nrow(mod_errors_loop)
     
     # confusion matrix
@@ -132,20 +135,24 @@ for (i in 1:15) {
                     dnn = c("Prediction", "Reference"))
     )
     
+    errors_df <- errors_df %>% 
+      bind_rows(mod_errors_loop %>% 
+                  mutate(index = index))
+    
     # visualize the errors
-    for (i in 1:length(image_var)) {
-      temp_errors <- mod_errors_loop %>% 
-        gather(key = "var" , value = "values", image_var) %>% 
-        filter(var == image_var[i])
-      
-      assign(
-        paste0("p", i), 
-        ggplot(data = temp_errors) + 
-          geom_bar(aes(x = values)) + labs(title = image_var[i]))
-    }
-    grid.arrange(p1, p2, p3, p4, p6, p7, 
-                 top = paste("Number of deads",deads))
-  }
+    # for (i in 1:length(image_var)) {
+    #   temp_errors <- mod_errors_loop %>% 
+    #     gather(key = "var" , value = "values", image_var) %>% 
+    #     filter(var == image_var[i])
+    #   
+    #   assign(
+    #     paste0("p", i), 
+    #     ggplot(data = temp_errors) + 
+    #       geom_bar(aes(x = values)) + labs(title = image_var[i]))
+    # }
+    # print(grid.arrange(p1, p2, p3, p4, p6, p7, 
+    #              top = paste("Number of deads",deads)))
+    index = index + 1
 }
 
 # saving the model
@@ -154,5 +161,26 @@ write_rds(mod_2, path = "models/model_iterations.rds")
 
 
 # visalizations -----------------------------------------------------------
+library(gganimate)
+gganimate <- errors_df %>%
+  pivot_longer(cols = c(-bruises, -pred, -class, -index), 
+               names_to = "names", values_to = "values") %>% 
+  ggplot(aes(x = values)) +
+    geom_bar(fill = "dodgerblue4") +
+    facet_wrap(.~names) +
+    theme_bw()+ 
+    transition_time(index) +
+    ease_aes(default = "linear")
+animate(gganimate)
 
 
+library(gapminder)
+p <- ggplot(
+  gapminder, 
+  aes(x = gdpPercap, y=lifeExp, size = pop, colour = country)) +
+  geom_point(show.legend = FALSE, alpha = 0.7) +
+  scale_color_viridis_d() +
+  scale_size(range = c(2, 12)) +
+  scale_x_log10() +
+  labs(x = "GDP per capita", y = "Life expectancy")
+animate(p)
